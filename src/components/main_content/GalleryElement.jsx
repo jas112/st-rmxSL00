@@ -31,11 +31,7 @@ const GalleryElement = ({
     const generateGalleryItems = () => {
         var gallerySet = [];
         if(galleryType == 'hero'){
-            if(parallaxRemix){
-                gallerySet.push(galleryImages[1]);
-            }else{
-                gallerySet.push(galleryImages[0])
-            }
+            gallerySet.push(galleryImages[1]);
         }else{
             gallerySet = galleryImages
         }

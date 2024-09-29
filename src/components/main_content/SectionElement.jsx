@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useInView } from 'react-intersection-observer'
-// import GalleryElement from './GalleryElement.jsx'
+import GalleryElement from './GalleryElement.jsx'
 import './styles/SectionElementSL.css'
 import {generateText} from '../../utils/contentTools.jsx'
 
@@ -48,24 +48,23 @@ const SectionElement = ({
 
       }, [currentStatusBool]);
 
-    // const generateGallery = () => {
-    //     const currentBoolStr = currentStatusBool.toString();
-    //     if(hasGalleryBool){
-    //         return(
-    //             <GalleryElement 
-    //             parallaxRemix={parallaxRemix}
-    //             sectionMarker={sectionDataValue.sectionMarker} 
-    //             galleryType={sectionDataValue.galleryType} 
-    //             galleryImages={sectionDataValue.galleryImages} 
-    //             currentStatusBool={currentStatusBool} 
-    //             btnHoverSound={btnHoverSound}
-    //             btnClickSound={btnClickSound}
-    //             handleItemInteractionSound={handleItemInteractionSound} />
-    //         )
-    //     }
-    // }
+    const generateGallery = () => {
+        const currentBoolStr = currentStatusBool.toString();
+        if(hasGalleryBool){
+            return(
+                <GalleryElement 
+                sectionMarker={sectionDataValue.sectionMarker} 
+                galleryType={sectionDataValue.galleryType} 
+                galleryImages={sectionDataValue.galleryImages} 
+                currentStatusBool={currentStatusBool} 
+                btnHoverSound={btnHoverSound}
+                btnClickSound={btnClickSound}
+                handleItemInteractionSound={handleItemInteractionSound} />
+            )
+        }
+    }
 
-    // const galleryValue = generateGallery;
+    const galleryValue = generateGallery;
 
     return (
         <>
@@ -89,7 +88,7 @@ const SectionElement = ({
                     <div className="section-nfo  nfo-scroll">
                         {generateText(sectionDataValue.sectionNfo,'sectionNfo', sectionDataValue.sectionMarker)}
                     </div>
-                    {/* {generateGallery()} */}
+                    {generateGallery()}
                 </div>
             </div>
         </>

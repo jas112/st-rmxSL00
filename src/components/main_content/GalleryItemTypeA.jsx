@@ -16,9 +16,9 @@ const GalleryItemTypeA = ({
       onClick={() => {
         handleItemInteractionSound(btnClickSound);
       }}>
-        <div className={`gallery-item-indicator`}></div>
+        {/* <div className={`gallery-item-indicator`}></div> */}
             <div className='gallery-item-tile' style={{backgroundImage: `url(${galleryItem.galleryItemThumbnailPath})`}}></div>
-        <div className={`gallery-item-indicator`}></div>
+        {/* <div className={`gallery-item-indicator`}></div> */}
     </div>
   )
 }
