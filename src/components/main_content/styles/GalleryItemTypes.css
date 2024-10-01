@@ -2,7 +2,7 @@
 /* Gallery Item Type A */
 
 .gallery-item-frame{
-    width: 62px;
+    width: 90px;
     height: 155px;
     margin: 0px 5px;
     display: flex;
@@ -14,7 +14,14 @@
 }
 
 .gallery-type-hero .gallery-item-frame{
-    width: 100%;
+    width: 99%;
+    height: 155px;
+    margin: 0px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid skyblue; */
 }
 
 .gallery-item-frame:hover{
@@ -35,15 +42,18 @@
 }
 
 .gallery-item-tile{
-    width: 60px;
-    height: 150px;
-    background-size: cover;
+    width: 85px;
+    height: 145px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background:#00000080;
+    box-shadow: 0px 0px 5px #00000090;
+    border: 2px solid #00000080;
     opacity: .7;
     border-radius: 5px 5px 5px 5px;
     margin: 3px;
+    flex: 0 1 auto;
 
     transition: opacity .025s, height .75s;
 }
@@ -79,10 +89,10 @@
 }
 
 .gallery-item-frame:hover .gallery-item-tile{
-    background-color: #ff450080;
-    border: solid 2px #ff4500;
-    box-shadow: 0 0 em #ff4500;
-    filter: drop-shadow(0 0 .25em #ff4500);
+    background-color: #ffffff80;
+    border: solid 3px #ffffff;
+    box-shadow: 0 0 em #ffffff;
+    filter: drop-shadow(0 0 .25em #ffffff);
 }
 
 .blink-focus-item{
@@ -92,7 +102,7 @@
 
 .active-gallery-element-console .gallery-item-frame{
     opacity: 1;
-    height: 200px;
+    height: 160px;
 }
 
 .active-gallery-element-console .gallery-item-tile{

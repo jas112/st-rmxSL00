@@ -433,6 +433,67 @@
     }
 }
 
+@keyframes textGlowWT {
+    0% {
+        -webkit-text-fill-color: #ffffff00;
+        text-shadow: 
+            0 0 10px transparent, 
+            0 0 20px transparent, 
+            0 0 30px #ffffff50, 
+            0 0 40px #ffffff50, 
+            0 0 50px #ffffff50, 
+            0 0 60px #ffffff50, 
+            0 0 70px #ffffff50;
+        opacity: .5;
+    }
+    25% {
+        -webkit-text-fill-color: #ffffff35;
+        text-shadow: 
+            0 0 15px transparent, 
+            0 0 25px #ffffff45, 
+            0 0 35px #ffffff45, 
+            0 0 45px #ffffff45, 
+            0 0 55px #ffffff45, 
+            0 0 65px #ffffff45, 
+            0 0 75px #ffffff45;
+    }
+    50% {
+        -webkit-text-fill-color: #ff450070;
+        text-shadow: 
+            0 0 20px transparent, 
+            0 0 30px #ffffff, 
+            0 0 40px #ffffff, 
+            0 0 50px #ffffff, 
+            0 0 60px #ffffff, 
+            0 0 70px #ffffff, 
+            0 0 80px #ffffff;
+        opacity: 1;
+    }
+    75% {
+        -webkit-text-fill-color: #ffffff35;
+        text-shadow: 
+            0 0 15px transparent, 
+            0 0 25px #ffffff45, 
+            0 0 35px #ffffff45, 
+            0 0 45px #ffffff45, 
+            0 0 55px #ffffff45, 
+            0 0 65px #ffffff45, 
+            0 0 75px #ffffff45;
+    }
+    100% {
+        -webkit-text-fill-color: #ffffff00;
+        text-shadow: 
+            0 0 10px transparent, 
+            0 0 20px transparent, 
+            0 0 30px #ffffff50, 
+            0 0 40px #ffffff50, 
+            0 0 50px #ffffff50, 
+            0 0 60px #ffffff50, 
+            0 0 70px #ffffff50;
+        opacity: .5;
+    }
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////// */
 
@@ -492,6 +553,20 @@
     100% {opacity:1;background-color:transparent;border:1px solid #ff4500;}
 }
 
+@keyframes crossBlinkSL{
+    0% {opacity:1;background-color:transparent;border:1px solid #ffffff;}
+    10% {opacity:.15;background-color:#ffffff;border:0px solid #ffffff;}
+    20% {opacity:.25;}
+    30% {opacity:.35}
+    40% {opacity:.45;}
+    50% {opacity:1;}
+    60% {opacity:.45}
+    70% {opacity:.35;}
+    80% {opacity:.25}
+    90% {opacity:.15;background-color:#ffffff;border:0px solid #ffffff;}
+    100% {opacity:1;background-color:transparent;border:1px solid #ffffff;}
+}
+
 @keyframes elementBlink{
     0% {opacity:1;color: yellow;font-weight: bold;}
     50% {opacity:.5;color: #ff4500;}
@@ -514,6 +589,12 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #ff450000;
     }
+}
+
+@keyframes elementBlinkSL{
+    0% {opacity:1;color: #ffffff;font-weight: bold;}
+    50% {opacity:.5;color: #ffffff;}
+    100% {opacity:1;color: #ffffff;font-weight: bolder;}
 }
 
 @keyframes flexLinkBlink{

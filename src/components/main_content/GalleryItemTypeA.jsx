@@ -17,7 +17,7 @@ const GalleryItemTypeA = ({
         handleItemInteractionSound(btnClickSound);
       }}>
         {/* <div className={`gallery-item-indicator`}></div> */}
-            <div className='gallery-item-tile' style={{backgroundImage: `url(${galleryItem.galleryItemThumbnailPath})`}}></div>
+            <div className='gallery-item-tile' style={{backgroundImage: `url(${galleryItem.galleryItemThumbnailPath})`, backgroundSize: `cover`, backgroundPosition: `center`}}></div>
         {/* <div className={`gallery-item-indicator`}></div> */}
     </div>
   )

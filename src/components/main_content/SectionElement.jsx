@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useInView } from 'react-intersection-observer'
+import BottomSectionPanel from './BottomSectionPanel.jsx'
 import GalleryElement from './GalleryElement.jsx'
 import './styles/SectionElementSL.css'
 import {generateText} from '../../utils/contentTools.jsx'
@@ -90,6 +91,7 @@ const SectionElement = ({
                     </div>
                     {generateGallery()}
                 </div>
+                <BottomSectionPanel currentStatusBool={currentStatusBool}/>
             </div>
         </>
       )

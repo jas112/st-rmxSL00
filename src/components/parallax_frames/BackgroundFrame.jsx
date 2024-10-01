@@ -8,7 +8,7 @@ const BackgroundFrame = ({currentScroll}) => {
   return (
     <div className="parallax-frame-holder-background">
         <div className="parallaxFrame">
-            <div className={`top-overlay ${hasScrollFromTop ? 'hide' : ''}`}></div>
+            <div className={`top-overlay ${hasScrollFromTop ? '' : ''}`}></div>
             <div id='stars' className='starFrame'></div>
             <div id='stars2' className='starFrame'></div>
             <div id='stars3' className='starFrame'></div>
