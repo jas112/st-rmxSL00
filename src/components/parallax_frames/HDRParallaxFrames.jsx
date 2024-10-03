@@ -25,14 +25,14 @@ const HDRParallaxFrames = ({parallaxRemix}) => {
             // console.log('from parallaxtransform');
             // console.log(scrollPosition);
 
-            document.getElementById('hdr-plx-figure').style.transform = `translate(0px, ${scrollPosition / 240}%)`;
-            document.getElementById('hdr-plx-helmet').style.transform = `translate(0px, ${scrollPosition / 240}%)`;
-            document.getElementById('hdr-plx-star').style.transform = `translate(0px, ${scrollPosition / 30}%)`;
-            document.getElementById('hdr-plx-planetsG0').style.transform = `translate(${scrollPosition / 284}%, -${scrollPosition / 480}%)`;
-            document.getElementById('hdr-plx-planetsG1').style.transform = `translate(-${scrollPosition / 284}%, -${scrollPosition / 480}%)`;
+            // document.getElementById('hdr-plx-figure').style.transform = `translate(0px, ${scrollPosition / 240}%)`;
+            // document.getElementById('hdr-plx-helmet').style.transform = `translate(0px, ${scrollPosition / 240}%)`;
+            // document.getElementById('hdr-plx-star').style.transform = `translate(0px, ${scrollPosition / 30}%)`;
+            // document.getElementById('hdr-plx-planetsG0').style.transform = `translate(${scrollPosition / 284}%, -${scrollPosition / 480}%)`;
+            // document.getElementById('hdr-plx-planetsG1').style.transform = `translate(-${scrollPosition / 284}%, -${scrollPosition / 480}%)`;
             document.getElementById('hdr-plx-stLogo').style.transform = `translate(0px, -${scrollPosition / 960}%)`;
-            document.getElementById('hdr-plx-planetsG2').style.transform = `translate(0px, -${scrollPosition / 46}%)`;
-            document.getElementById('hdr-plx-asteroids3').style.transform = `translate(0px, -${scrollPosition / 13}%)`;
+            // document.getElementById('hdr-plx-planetsG2').style.transform = `translate(0px, -${scrollPosition / 46}%)`;
+            // document.getElementById('hdr-plx-asteroids3').style.transform = `translate(0px, -${scrollPosition / 13}%)`;
 
         };
 

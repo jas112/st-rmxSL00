@@ -5,8 +5,8 @@ const ContentDivider = ({
     reverseThis
 }) => {
     const reverseThisBool = (reverseThis == 'true');
-    console.log(`reverseThis = ${reverseThis}`);
-    console.log(`reverseThisBool = ${reverseThisBool}`);
+    // console.log(`reverseThis = ${reverseThis}`);
+    // console.log(`reverseThisBool = ${reverseThisBool}`);
     
   return (
     <div className={`content-divider ${reverseThisBool ? 'dir-rt': 'dir-lft'}`}>

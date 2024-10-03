@@ -13,6 +13,8 @@ import TerminusSection from './components/main_content/TerminusSection.jsx';
 import FTR_Element from './components/main_content/FTR_Element.jsx';
 import ContentDivider from './components/main_content/ContentDivider.jsx';
 
+import spacetrippAvatar from './assets/images/hdrParallax_imgs/ST_tripp_figure_remix_studio_rs_1Awb_b6cSL.png'
+
 import sectionHoverSoundRef from '/src/assets/audio/286926-TheLibrarybyMTC-UI-Computer-250.wav'
 import navMenuClickSoundRef from '/src/assets/audio/space_signal-213481.mp3'
 import navPntClickSoundRef from '/src/assets/audio/52460-SCIENCE_FICTION_DOOR_WHOOSH_OPEN_SHORT_01.wav'
@@ -254,6 +256,10 @@ function App() {
       <HDRParallaxFrames parallaxRemix={parallaxRemix}/>
       <div ref={topRef}></div>
       <div className="content-container">
+        <div className="main-content-avatar-frame">
+          <img className='main-content-avatar-image' src={spacetrippAvatar} alt="Avatar Image of Spacetripp." />
+          <div className="main-content-avatar-pedastal"></div>
+        </div>
       <div className="main-content">
         {Object.keys(sectionRefs).slice(0, 5).map((sectionKey,idx) =>(
           <React.Fragment key={idx}>

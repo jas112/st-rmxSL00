@@ -436,12 +436,12 @@
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 110px;
+        width: 60px;
         max-width: 100%;
-        padding: 0px 5px;
+        padding: 0px 0px 5px 0px;
         /* border: solid 1px green; */
         position: relative;
-        top:198px;
+        top:200px;
         right: 0px;
         background: #00000030;
         border-radius: 0px 0px 8px 8px;;
@@ -455,7 +455,7 @@
     .nav-minimized {
         display: flex;
         position: absolute;
-        right: 50px;
+        right: 22px;
     }
 }
 

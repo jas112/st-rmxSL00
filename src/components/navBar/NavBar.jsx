@@ -90,7 +90,7 @@ const NavBar = ({
                         handleItemInteractionSound(sectionHoverSoundEnter)
                         setSfxActive(!sfxActive)}}  />
             </div> 
-            <div 
+            {/* <div 
                 className={`st-btn ${parallaxRemix ? '' : 'st-off'}`}  
                 title={parallaxRemix ? 'Disengage Parallax Remix' : 'Engage Parallax Remix'}
                 onMouseEnter={() => {
@@ -102,7 +102,7 @@ const NavBar = ({
                     onClick={() => {
                         handleItemInteractionSound(sectionHoverSoundEnter)
                         setParallaxRemix(!parallaxRemix)}}  />
-            </div>
+            </div> */}
         </div>
         <div className={`nav-console ${isNavOpen ? 'nav-vertical' : 'nav-horizontal'}`}>
             {/* <div className='nfo-console'>
@@ -122,12 +122,12 @@ const NavBar = ({
                         scrollToTop();
                     }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='HDR'>
                         <NavBar_NavPoint targetSection={'start'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>HDR</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div 
                 className={getClassName('about')} 
@@ -141,12 +141,12 @@ const NavBar = ({
                     scrollToSection('about');
                 }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='About'>
                         <NavBar_NavPoint targetSection={'about'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>About</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div 
                 className={getClassName('webDevelopment')} 
@@ -160,12 +160,12 @@ const NavBar = ({
                     scrollToSection('webDevelopment')
                 }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='Web+Dev'>
                         <NavBar_NavPoint targetSection={'webDevelopment'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>Web+Dev</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div 
                 className={getClassName('emailDevelopment')} 
@@ -179,12 +179,12 @@ const NavBar = ({
                     scrollToSection('emailDevelopment');
                 }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='Email+Dev'>
                         <NavBar_NavPoint targetSection={'emailDevelopment'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>Email+Dev</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div 
                 className={getClassName('graphicDesign')} 
@@ -198,12 +198,12 @@ const NavBar = ({
                     scrollToSection('graphicDesign');
                 }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='Gfx+Dsn'>
                         <NavBar_NavPoint targetSection={'graphicDesign'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>Gfx+Dsn</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div 
                 className={getClassName('visualDesign')} 
@@ -217,12 +217,12 @@ const NavBar = ({
                     scrollToSection('visualDesign')
                 }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='Vis+Dsn'>
                         <NavBar_NavPoint targetSection={'visualDesign'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>Vis+Dsn</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div 
                 className={getClassName('terminus')} 
@@ -236,12 +236,12 @@ const NavBar = ({
                     scrollToSection('terminus');
                 }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='Terminus'>
                         <NavBar_NavPoint targetSection={'terminus'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>Terminus</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div 
                 className={getClassName('end')} 
@@ -254,12 +254,12 @@ const NavBar = ({
                     scrollToBottom();
                 }}
                 >
-                    <div className='nav-link-element-1'>
+                    <div className='nav-link-element-1' title='FTR'>
                         <NavBar_NavPoint targetSection={'end'} />
                     </div>
-                    <div className='nav-link-element-2'>
+                    {/* <div className='nav-link-element-2'>
                         <div className='nav-link-label'>FTR</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
