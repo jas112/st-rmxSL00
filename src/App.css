@@ -69,6 +69,14 @@ body::-webkit-scrollbar-thumb:hover {
   color: #888;
 }
 
+.bookend-container{
+  width: 100%;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  overflow: hidden;
+  border: 1px solid goldenrod;
+}
+
 .content-container{
   display: flex;
   flex-flow: column nowrap;

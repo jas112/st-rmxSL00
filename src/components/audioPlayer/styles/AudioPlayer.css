@@ -3,7 +3,8 @@
 .audio-player-frame{
     display: flex;
     flex-flow: row nowrap;
-    width: auto;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     opacity: .1;
     /* border: 1px solid #ffffff; */

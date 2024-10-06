@@ -228,7 +228,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <NavBar 
+      {/* <NavBar 
         currentScroll={scrollPositionY} 
         currentDate={dateString}
         currentTime={timeString} 
@@ -251,57 +251,62 @@ function App() {
         handleItemInteractionSound={handleItemInteractionSound}
         parallaxRemix={parallaxRemix} 
         setParallaxRemix={setParallaxRemix}
-      /> 
+      />  */}
       {/* <SpacerElement factor={1}/> */}
-      <HDRParallaxFrames parallaxRemix={parallaxRemix}/>
+      <div className="bookend-container hdr-container">
+        <HDRParallaxFrames parallaxRemix={parallaxRemix}/>
+      </div>
       <div ref={topRef}></div>
       <div className="content-container">
         <div className="main-content-avatar-frame">
           <img className='main-content-avatar-image' src={spacetrippAvatar} alt="Avatar Image of Spacetripp." />
           <div className="main-content-avatar-pedastal"></div>
         </div>
-      <div className="main-content">
-        {Object.keys(sectionRefs).slice(0, 5).map((sectionKey,idx) =>(
-          <React.Fragment key={idx}>
-            {idx === 0 ? '' : <ContentDivider reverseThis={'true'}/>}
-            {/* <ContentDivider directionValue={'dir-rt'}/> */}
-            <div className='page-nav-ref section-nav-frame' ref={sectionRefs[sectionKey]}>
-              <SectionElement 
-                sectionDataValue={sectionsData[sectionKey]} 
-                currentPageLocation={currentPageLocation}
-                setCurrentPageLocation={setCurrentPageLocation}
-                sectionHoverSoundEnter={sectionHoverSoundEnter}
-                sectionHoverSoundExit={sectionHoverSoundExit}
-                btnHoverSound={btnHoverSound}
-                btnClickSound={btnClickSound}
-                handleItemInteractionSound={handleItemInteractionSound}
-              />
-            </div>
-            <SpacerElement factor={'05'}/>
-          </React.Fragment>
-        ))}
-        <ContentDivider reverseThis={'false'}/>
-        {/* <div className="content-divider"></div> */}
-        <div className='page-nav-ref terminus-nav' ref={sectionRefs.terminus}>
-          <TerminusSection 
-            sectionDataValue={sectionsData.terminus}
-            currentPageLocation={currentPageLocation}
-            setCurrentPageLocation={setCurrentPageLocation}
-            parallaxRemix={parallaxRemix}
-            sectionHoverSoundEnter={sectionHoverSoundEnter}
-            sectionHoverSoundExit={sectionHoverSoundExit}
-            btnHoverSound={btnHoverSound}
-            btnClickSound={btnClickSound}
-            handleItemInteractionSound={handleItemInteractionSound}
-          />
+        <div className="main-content">
+          {Object.keys(sectionRefs).slice(0, 5).map((sectionKey,idx) =>(
+            <React.Fragment key={idx}>
+              {idx === 0 ? '' : <ContentDivider reverseThis={'true'}/>}
+              {/* <ContentDivider directionValue={'dir-rt'}/> */}
+              <div className='page-nav-ref section-nav-frame' ref={sectionRefs[sectionKey]}>
+                <SectionElement 
+                  sectionDataValue={sectionsData[sectionKey]} 
+                  currentPageLocation={currentPageLocation}
+                  setCurrentPageLocation={setCurrentPageLocation}
+                  sectionHoverSoundEnter={sectionHoverSoundEnter}
+                  sectionHoverSoundExit={sectionHoverSoundExit}
+                  btnHoverSound={btnHoverSound}
+                  btnClickSound={btnClickSound}
+                  handleItemInteractionSound={handleItemInteractionSound}
+                />
+              </div>
+              <SpacerElement factor={'05'}/>
+            </React.Fragment>
+          ))}
+          <ContentDivider reverseThis={'false'}/>
+          {/* <div className="content-divider"></div> */}
+          <div className='page-nav-ref terminus-nav' ref={sectionRefs.terminus}>
+            <TerminusSection 
+              sectionDataValue={sectionsData.terminus}
+              currentPageLocation={currentPageLocation}
+              setCurrentPageLocation={setCurrentPageLocation}
+              parallaxRemix={parallaxRemix}
+              sectionHoverSoundEnter={sectionHoverSoundEnter}
+              sectionHoverSoundExit={sectionHoverSoundExit}
+              btnHoverSound={btnHoverSound}
+              btnClickSound={btnClickSound}
+              handleItemInteractionSound={handleItemInteractionSound}
+            />
+          </div>
         </div>
       </div>
+      <div className="bookend-container ftr-container">
+        <FTR_Element parallaxRemix={parallaxRemix} currentPageLocation={currentPageLocation} />
       </div>
       <div className='ftr-element'>
         <SpacerElement factor={3}/> 
         {/* <FTR_Element parallaxRemix={parallaxRemix} currentPageLocation={currentPageLocation} /> */}
       </div>
-      <BackgroundFrame currentScroll={scrollPositionY}/>
+      {/* <BackgroundFrame currentScroll={scrollPositionY}/> */}
       <div className='page-nav-ref' ref={bottomRef}></div>
     </>
   )

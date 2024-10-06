@@ -104,6 +104,7 @@
     font-weight: 800;
     align-self: flex-start;
     opacity: 1;
+    word-break:break-word;
     /* animation: elementBlink 3s infinite; */
     /* animation: textGlowWT 3s infinite; */
 }
@@ -125,6 +126,7 @@
     font-weight: 400;
     font-size: 45px;
     font-variant-caps: small-caps;
+    word-break:break-word;
 }
 
 .ftr-main-title-SL > h3{

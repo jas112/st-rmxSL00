@@ -1,3 +1,50 @@
+@keyframes filamentBlink {
+    0% { 
+        height: 10%;
+        filter: drop-shadow(0 0 0em #000000);
+        box-shadow: 0px 0px 0em #000000;
+    }
+    100% { 
+        height: 110%;
+        filter: drop-shadow(0 0 .5em #00000020);
+        box-shadow: 0px 0px .5em #00000020; 
+    } 
+}
+
+@keyframes pipShift {
+    0% { 
+        width: 5%;
+    }
+    50% {
+        width: 55%;  
+    } 
+    100% {
+        width: 5%; 
+    } 
+}
+
+@keyframes filamentShift {
+    0% { 
+        width: 10%;
+    }
+    50% {
+        width: 55%; 
+        background: #ffffff30; 
+    } 
+    100% {
+        width: 10%;  
+    } 
+}
+
+@keyframes dividerBlink {
+    0% { 
+        background-color: #00000020;
+    }
+    100% { 
+        background-color: #00000000; 
+    } 
+}
+
 .content-divider{
     display: flex;
     flex-wrap: nowrap;
@@ -10,17 +57,29 @@
     /* border: 1px solid red; */
 }
 
+.divider-pip{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+
 .sm-divider-pip{
     width: 1.5%;
     height: 10px;
     background-color: #00000020;
+    animation: dividerBlink 1.5s infinite;
     /* border: 1px solid white; */
 }
 
 .lrg-divider-pip{
-    width: 75%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 55%;
     height: 10px;
     background-color: #00000020;
+    animation: pipShift 3.5s infinite;
 }
 
 .dir-lft{
@@ -29,4 +88,21 @@
 
 .dir-rt{
     flex-direction: row-reverse;
+}
+
+.divider-filament{
+    width: 99%;
+    height: 10%;
+    border: 1px solid #ffffff00;
+    /* animation: filamentBlink 1s infinite; */
+    /* background-color: #ffffff40; */
+}
+
+.divider-filament-lg{
+    width: 10%;
+    height: 10%;
+    border: 1px solid #ffffff00;
+    /* animation: filamentShift 3.5s infinite; */
+    /* animation: filamentBlink 1s infinite; */
+    /* background-color: #ffffff40; */
 }

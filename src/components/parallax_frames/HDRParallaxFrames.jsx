@@ -1,20 +1,23 @@
 import React, { useEffect} from 'react'
 import './styles/HDRParallaxFrames.css'
-import stFigureA_L1 from '../../assets/images/hdrParallax_imgs/ST_tripp_figure-A-L1-RSCC.png'
-import stFigureA_L4 from '../../assets/images/hdrParallax_imgs/ST_tripp_figure-A-L4-RSCC.png'
+import '../main_content/styles/Animations.css'
+// import stFigureA_L1 from '../../assets/images/hdrParallax_imgs/ST_tripp_figure-A-L1-RSCC.png'
+// import stFigureA_L4 from '../../assets/images/hdrParallax_imgs/ST_tripp_figure-A-L4-RSCC.png'
 import stStar from '../../assets/images/hdrParallax_imgs/ST_star-RSCC.png'
-import stPlanets_0C from '../../assets/images/hdrParallax_imgs/ST_planets_0C-RSCC.png'
-import stPlanets_1D from '../../assets/images/hdrParallax_imgs/ST_planets_1D-RSCC.png'
+// import stPlanets_0C from '../../assets/images/hdrParallax_imgs/ST_planets_0C-RSCC.png'
+// import stPlanets_1D from '../../assets/images/hdrParallax_imgs/ST_planets_1D-RSCC.png'
 import stLogo_PFG from '../../assets/images/hdrParallax_imgs/ST_logo-RSCC.png'
-import stPlanets_2D from '../../assets/images/hdrParallax_imgs/ST_planets_2D-RSCC.png'
-import stAsteroids from '../../assets/images/hdrParallax_imgs/ST_asteroids-RSCC.png'
+import hdr_planet1 from '../../assets/images/hdrParallax_imgs/ST_planets_remix_hdr_trcwb2_30.png'
+import hdr_planet2 from '../../assets/images/hdrParallax_imgs/ST_planets_remix_hdr_trcwb2_30.png'
+// import stPlanets_2D from '../../assets/images/hdrParallax_imgs/ST_planets_2D-RSCC.png'
+// import stAsteroids from '../../assets/images/hdrParallax_imgs/ST_asteroids-RSCC.png'
 import stFigureA_L1_remix from '../../assets/images/hdrParallax_imgs/ST_tripp_figure_remix_studio_rs_1Awb_b6c.png'
 import stFigureA_L4_remix from '../../assets/images/hdrParallax_imgs/ST_tripp_figure_remix_studio_rs_1Bwb.png'
 import stStar_remix from '../../assets/images/hdrParallax_imgs/ST_star_remix.png'
-import stPlanets_0C_remix from '../../assets/images/hdrParallax_imgs/ST_planets_0C_remix.png'
-import stPlanets_1D_remix from '../../assets/images/hdrParallax_imgs/ST_planets_1D_remix.png'
-import stPlanets_2D_remix from '../../assets/images/hdrParallax_imgs/ST_planets_2D_remix.png'
-import stAsteroids_remix from '../../assets/images/hdrParallax_imgs/ST_asteroids_remix.png'
+// import stPlanets_0C_remix from '../../assets/images/hdrParallax_imgs/ST_planets_0C_remix.png'
+// import stPlanets_1D_remix from '../../assets/images/hdrParallax_imgs/ST_planets_1D_remix.png'
+// import stPlanets_2D_remix from '../../assets/images/hdrParallax_imgs/ST_planets_2D_remix.png'
+// import stAsteroids_remix from '../../assets/images/hdrParallax_imgs/ST_asteroids_remix.png'
 
 
 const HDRParallaxFrames = ({parallaxRemix}) => {
@@ -27,7 +30,7 @@ const HDRParallaxFrames = ({parallaxRemix}) => {
 
             // document.getElementById('hdr-plx-figure').style.transform = `translate(0px, ${scrollPosition / 240}%)`;
             // document.getElementById('hdr-plx-helmet').style.transform = `translate(0px, ${scrollPosition / 240}%)`;
-            // document.getElementById('hdr-plx-star').style.transform = `translate(0px, ${scrollPosition / 30}%)`;
+            document.getElementById('hdr-plx-star').style.transform = `translate(0px, ${scrollPosition / 30}%)`;
             // document.getElementById('hdr-plx-planetsG0').style.transform = `translate(${scrollPosition / 284}%, -${scrollPosition / 480}%)`;
             // document.getElementById('hdr-plx-planetsG1').style.transform = `translate(-${scrollPosition / 284}%, -${scrollPosition / 480}%)`;
             document.getElementById('hdr-plx-stLogo').style.transform = `translate(0px, -${scrollPosition / 960}%)`;
@@ -89,6 +92,27 @@ const HDRParallaxFrames = ({parallaxRemix}) => {
                 style={{transform: 'translate(-0.704225%, -0.416667%)'}}
             />
         </div> */}
+        {/* <div className='hdr-parallax-frame spc-frame-100pct-width'>
+            <div className='hdr-parallax-frame-secondary hdr-parallax-frame-rig-stLogo' id='stLogo-rig'>
+                <img 
+                    src={stLogo_PFG} 
+                    className='hdr-parallax-frame-img' 
+                    alt='stLogo' 
+                    id='hdr-plx-stLogo'
+                />
+            </div>
+        </div> */}
+        <div className='hdr-parallax-frame-feature'>
+            <div className='hdr-parallax-frame-secondary hdr-parallax-frame-rig-stPlanet' id='stPlanet-rig'>
+                <img 
+                    src={hdr_planet1} 
+                    className='hdr-parallax-frame-feature-img'
+                    alt='hdr planet 2' 
+                    id='hdr-plx-planet1' 
+                    style={{transform: 'translate(0px, -4.34783%)'}}
+                />
+            </div>
+        </div>
         <div className='hdr-parallax-frame spc-frame-100pct-width'>
             <div className='hdr-parallax-frame-secondary hdr-parallax-frame-rig-stLogo' id='stLogo-rig'>
                 <img 
@@ -98,6 +122,15 @@ const HDRParallaxFrames = ({parallaxRemix}) => {
                     id='hdr-plx-stLogo'
                 />
             </div>
+        </div>
+        <div className='hdr-parallax-frame'>
+            <img 
+                src={stStar_remix} 
+                className='hdr-parallax-frame-img'
+                alt='star"' 
+                id='hdr-plx-star' 
+                style={{transform: 'translate(0px, 6.66667%)'}}
+            />
         </div>
         {/* <div className='hdr-parallax-frame'>
             <img 

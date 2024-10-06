@@ -22,7 +22,7 @@
     margin: 0px auto;
     padding: 20px;
 
-    transition: background-color .5s, width 1s, margin-left 1s, margin-right 1s, opacity 1.5s;
+    transition: background-color .5s, width .5s, margin-left .5s, margin-right .5s, opacity .5s;
 }
 
 .active-section-minor{
@@ -100,6 +100,7 @@
 .section-nfo{
     font-size: 15px;
     text-align: left;
+    max-width: 90%;
 }
 
 /* .nfo-scroll{

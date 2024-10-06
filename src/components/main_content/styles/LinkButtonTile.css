@@ -9,8 +9,9 @@
     align-items: center;
     /* background: #ffffff; */
     background-color: #0d0d0d90;
-    filter: drop-shadow(0 0 3em #012849);
-    box-shadow: 0 0 7em #012849;
+    opacity: .8;
+    filter: drop-shadow(0 0 3em #ffffff);
+    box-shadow: 0 0 7em #ffffff20;
     /* border: solid 2px #ffffff; */
     cursor: crosshair;
 
@@ -110,8 +111,8 @@
 
 .terminus-console-panel-B .link-button-tile-B{
     border: solid 2px #ff450000;
-    filter: drop-shadow(0 0 3em #ffffff);
-    box-shadow: 0 0 7em #ffffff;
+    filter: drop-shadow(0 0 3em #ffffff00);
+    box-shadow: 0 0 7em #ffffff00;
 }
 
 .link-button-tile-text{

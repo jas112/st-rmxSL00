@@ -16,6 +16,16 @@
     100% {opacity:1;}
 }
 
+@keyframes rotate360 {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes rotate360Rev {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
 
 /* HDR Parallax Frames Style Definitions */
 
@@ -30,10 +40,22 @@
     width: 100%;
     /* background: #ff000060;
     background: blue; */
+    border-spacing: 0px;
     border:1px solid red;
 }
 
 .hdr-parallax-frame{
+    max-width: none; /* Prevents the image from scaling down */
+    width: 842px; /* Ensures the image remains 842px wide */
+    max-width: 100%;
+    margin: 0px auto;
+    /* border:1px solid red; */
+    align-self: center;
+    position: relative;
+    top: 0%;
+}
+
+.hdr-parallax-frame-feature{
     max-width: none; /* Prevents the image from scaling down */
     width: 842px; /* Ensures the image remains 842px wide */
     margin: 0px auto;
@@ -63,6 +85,10 @@
     width: 842px; /* Ensures the image remains 842px wide */
 }
 
+.hdr-parallax-frame-feature-img{
+    width: 100%;
+}
+
 .hdr-parallax-frame-img-remix{
     width: 1400px; /* Ensures the image remains 1400px wide */
 }
@@ -75,6 +101,12 @@
     justify-content: center;
     align-items: center;
     /* border:1px solid yellow; */
+}
+
+.hdr-parallax-frame-rig-stPlanet{
+    position: relative;
+    top:100px;
+    z-index:-5;
 }
 
 .hdr-parallax-frame-rig-stLogo{
@@ -98,8 +130,19 @@
 }
 #hdr-plx-star{
     position: relative;
-    top:800px;
+    top:-300px;
+    right: 300px;
     z-index:-20;
+    border: 1px solid lime;
+}
+#hdr-plx-planet1{
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+    top:0px;
+    z-index:-15;
+    animation: rotate360Rev 300s infinite;
     /* border: 1px solid lime; */
 }
 #hdr-plx-planetsG0{
@@ -115,7 +158,10 @@
     /* border: 1px solid lime; */
 }
 #hdr-plx-stLogo{
+    position: relative;
+    top:-325px;
     width: 100%;
+    z-index:-1;
     animation: titleBlink 4s infinite;
     /* border: 1px solid lime; */
 }
